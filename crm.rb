@@ -9,15 +9,13 @@ end
 
 get '/contacts' do
 erb :contacts
-@contacts = [crm.sqlite3]
+@contacts = Contact.all
 end
 
 get '/about' do
 erb :about
+
 end
-
-
-
 
 
 after do
