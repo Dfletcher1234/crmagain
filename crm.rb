@@ -12,6 +12,17 @@ get '/home' do
 erb :index
 end
 
+get '/contacts/new' do
+  erb :new
+end
+
+get '/about' do
+  @contactspage = '/contacts'
+  @home_page = '/'
+erb :about
+end
+
+
 get '/contacts' do
   @contacts = Contact.all
   @size = Contact.all.size
