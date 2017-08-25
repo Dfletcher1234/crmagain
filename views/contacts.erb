@@ -1,21 +1,10 @@
 
-<h2>There are X Contacts</h2>
+<h2>There are <span><%=@size%></span> Contacts</h2>
 <div class= "contacts">
-
+<%@contacts.each do |contact|%>
 <P>
-Movie Title(email)
-
+<%=contact.full_name%>
   <br><a href="www.google.ca">Edit</a>|<a href="www.google.ca">Delete</a></br>
 </p>
-<p>
-Movie Title(email)
-<br><a href="www.google.ca">Edit</a>|<a href="www.google.ca">Delete</a></br>
-
-</p>
-<p>
-  Movie Title(email)
-  <br><a href="www.google.ca">Edit</a>|<a href="www.google.ca">Delete</a></br>
-
-
-</p>
+<%end%>
 </div>
