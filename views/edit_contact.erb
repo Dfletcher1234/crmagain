@@ -8,3 +8,11 @@
   <input type='text' name='note' value='<%= @contact.note %>'>
   <input type='submit' value='Edit Contact'>
 </form>
+
+<form action='/contacts/<%= @contact.id %>' method='post'>
+  <input type="hidden" name="_method" value="DELETE">
+  <input type='submit' value='Delete Contact'>
+
+
+
+</form>

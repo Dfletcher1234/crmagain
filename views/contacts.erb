@@ -4,7 +4,7 @@
 <%@contacts.each do |contact|%>
 <P>
 <%=contact.full_name%>
-  <br><a href="www.google.ca">Edit</a>|<a href="www.google.ca">Delete</a></br>
+  <br><a href="/contacts/:id/edit">Edit</a>|<a href="contacts/edit">Delete</a></br>
 </p>
 <%end%>
 </div>
